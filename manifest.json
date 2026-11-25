@@ -1,0 +1,41 @@
+{
+  "manifest_version": 3,
+  "name": "StickerVox",
+  "version": "0.1.0",
+  "description": "Turn a video clip into a WhatsApp sound sticker with free framing, synced captions and normalized audio. Unofficial.",
+  "minimum_chrome_version": "116",
+  "icons": {
+    "16": "icons/icon-16.png",
+    "32": "icons/icon-32.png",
+    "48": "icons/icon-48.png",
+    "128": "icons/icon-128.png"
+  },
+  "host_permissions": ["https://web.whatsapp.com/*"],
+  "background": { "service_worker": "background.js" },
+  "action": { "default_title": "StickerVox" },
+  "content_scripts": [
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": ["src/relay.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["https://web.whatsapp.com/*"],
+      "js": [
+        "src/core.js",
+        "src/media/webp.js",
+        "src/media/ogg.js",
+        "src/media/audio.js",
+        "src/media/render.js",
+        "src/media/build.js",
+        "src/wa/bridge.js",
+        "src/ui/model.js",
+        "src/ui/styles.js",
+        "src/ui/panel.js",
+        "src/main.js"
+      ],
+      "run_at": "document_idle",
+      "world": "MAIN"
+    }
+  ]
+}

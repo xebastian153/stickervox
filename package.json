@@ -1,0 +1,10 @@
+{
+  "name": "stickervox",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Chrome extension: WhatsApp sound stickers from video clips with free framing, synced captions and normalized audio.",
+  "license": "MIT",
+  "scripts": {
+    "test": "node --test \"tests/**/*.test.js\""
+  }
+}
