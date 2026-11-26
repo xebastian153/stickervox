@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 440 280" width="440" height="280">
+  <!-- Small promotional tile for Microsoft Edge Add-ons. Rendered together with icons/logo.svg. -->
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0F3B36"/>
+      <stop offset="1" stop-color="#06201E"/>
+    </linearGradient>
+    <radialGradient id="halo" cx="0.27" cy="0.5" r="0.45">
+      <stop offset="0" stop-color="#2ED3A0" stop-opacity="0.35"/>
+      <stop offset="1" stop-color="#2ED3A0" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="440" height="280" fill="url(#bg)"/>
+  <rect width="440" height="280" fill="url(#halo)"/>
+  <!-- The logo (icons/logo.svg) is drawn at x=34 y=70, 140x140, when rendering. -->
+  <text x="196" y="122" fill="#FFFFFF" font-family="Segoe UI, Arial, sans-serif" font-weight="700" font-size="36">StickerVox</text>
+  <text x="197" y="152" fill="#CFE9E2" font-family="Segoe UI, Arial, sans-serif" font-weight="600" font-size="16">Stickers con sonido</text>
+  <text x="197" y="173" fill="#CFE9E2" font-family="Segoe UI, Arial, sans-serif" font-weight="600" font-size="16">desde tus videos</text>
+  <rect x="196" y="190" width="192" height="26" rx="13" fill="#FFFFFF" fill-opacity="0.1"/>
+  <text x="292" y="207.5" text-anchor="middle" fill="#E6F4F0" font-family="Segoe UI, Arial, sans-serif" font-weight="600" font-size="12">Para WhatsApp Web · No oficial</text>
+</svg>

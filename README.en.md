@@ -42,15 +42,15 @@
 
 ## Features
 
-| | Feature | Details |
-|---|---|---|
-| ✂️ | **Precise trimming** | Pick the exact segment (up to 15 s) on a zoomable thumbnail strip. |
-| 🖼️ | **Free framing** | Drag and zoom the image to choose what stays in view. |
-| 💬 | **Text and emoji** | Layers on top of the sticker with styles (meme, bubble, label, shadow), colors and timing. |
-| ⭕ | **Shapes** | Square, rounded or circle, with an optional white outline. |
-| 📈 | **Smoothness estimate** | Shows the expected frame rate before building, or how many seconds fit. |
-| 🔊 | **Clean audio** | Optional loudness normalization and short fades to avoid clicks. |
-| 📤 | **Direct sending** | Preview the result and send it to any chat or group. |
+| Feature | Details |
+|---|---|
+| **Precise trimming** | Pick the exact segment (up to 15 s) on a zoomable thumbnail strip. |
+| **Free framing** | Drag and zoom the image to choose what stays in view. |
+| **Text and emoji** | Layers on top of the sticker with styles (meme, bubble, label, shadow), colors and timing. |
+| **Shapes** | Square, rounded or circle, with an optional white outline. |
+| **Smoothness estimate** | Shows the expected frame rate before building, or how many seconds fit. |
+| **Clean audio** | Optional loudness normalization and short fades to avoid clicks. |
+| **Direct sending** | Preview the result and send it to any chat or group. |
 
 ## How it works
 
@@ -105,7 +105,7 @@ Coming soon to the Edge store, with one-click installation and automatic updates
 ## Limits
 
 | Limit | Value | What happens when exceeded |
-|---|---|---|
+|---|---|
 | Duration | 15 s per sticker | The segment selector stops at that length. |
 | Sticker size | < 1000 KB | Quality and frame rate are reduced; if it still does not fit, a shorter segment is suggested. |
 | Resolution | 512 × 512 px | Framing adapts to this size. |

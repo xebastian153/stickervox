@@ -39,15 +39,15 @@
 
 ## Características
 
-| | Función | Detalle |
-|---|---|---|
-| ✂️ | **Recorte preciso** | Elige el tramo exacto (hasta 15 s) sobre una tira de miniaturas con zoom. |
-| 🖼️ | **Encuadre libre** | Arrastra y acerca la imagen para decidir qué se ve. |
-| 💬 | **Texto y emoji** | Capas sobre el sticker con estilos (meme, burbuja, etiqueta, sombra), colores y momento de aparición. |
-| ⭕ | **Formas** | Cuadrado, redondeado o círculo, con borde blanco opcional. |
-| 📈 | **Indicador de fluidez** | Antes de crear el sticker muestra los cuadros por segundo esperados, o cuántos segundos caben. |
-| 🔊 | **Audio cuidado** | Normalización opcional y fundidos suaves para evitar clics. |
-| 📤 | **Envío directo** | Escúchalo y envíalo al chat o grupo que elijas. |
+| Función | Detalle |
+|---|---|
+| **Recorte preciso** | Elige el tramo exacto (hasta 15 s) sobre una tira de miniaturas con zoom. |
+| **Encuadre libre** | Arrastra y acerca la imagen para decidir qué se ve. |
+| **Texto y emoji** | Capas sobre el sticker con estilos (meme, burbuja, etiqueta, sombra), colores y momento de aparición. |
+| **Formas** | Cuadrado, redondeado o círculo, con borde blanco opcional. |
+| **Indicador de fluidez** | Antes de crear el sticker muestra los cuadros por segundo esperados, o cuántos segundos caben. |
+| **Audio cuidado** | Normalización opcional y fundidos suaves para evitar clics. |
+| **Envío directo** | Escúchalo y envíalo al chat o grupo que elijas. |
 
 ## Cómo funciona
 
@@ -104,7 +104,7 @@ Próximamente en la tienda de Edge, con instalación de un clic y actualizacione
 ## Límites
 
 | Límite | Valor | Qué pasa si se supera |
-|---|---|---|
+|---|---|
 | Duración | 15 s por sticker | El selector de tramo no deja pasar de ahí. |
 | Peso del sticker | < 1000 KB | Se ajustan calidad y cuadros por segundo; si aun así no cabe, sugiere un tramo más corto. |
 | Resolución | 512 × 512 px | El encuadre se adapta a este tamaño. |
