@@ -1,84 +1,157 @@
+<div align="center">
+
+<img src="store/logo-300.png" alt="Logo de StickerVox" width="112" height="112">
+
 # StickerVox
 
-**Stickers con sonido para WhatsApp desde tus propios videos.** StickerVox es una extensión para Microsoft Edge (y otros navegadores Chromium) que convierte un clip corto en un sticker animado con sonido y lo envía al chat que elijas, todo desde WhatsApp Web.
+**Convierte tus videos en stickers con sonido para WhatsApp, directo desde WhatsApp Web.**
 
-> **Extensión no oficial.** StickerVox no tiene relación con WhatsApp ni con Meta, ni está respaldada por ellas. Funciona con partes internas de WhatsApp Web que pueden cambiar en cualquier momento; si un día deja de enviar, probablemente WhatsApp se actualizó y hay que esperar una versión nueva.
+[![Última versión](https://img.shields.io/github/v/release/xebastian153/stickervox?label=versi%C3%B3n&color=25D366)](https://github.com/xebastian153/stickervox/releases/latest)
+[![Licencia MIT](https://img.shields.io/badge/licencia-MIT-blue)](LICENSE)
+[![Manifest V3](https://img.shields.io/badge/Manifest-V3-4285F4)](manifest.json)
+[![Sin dependencias](https://img.shields.io/badge/dependencias-0-brightgreen)](package.json)
+[![Privacidad: 100% local](https://img.shields.io/badge/privacidad-100%25%20local-8A2BE2)](PRIVACY.md)
 
-![El editor de StickerVox: sticker en círculo con borde blanco, texto "¡HOLAAA!" y el indicador "≈ 15 cuadros/s · muy fluido"](store/screenshot-2-editar.png)
+[Descargar](https://github.com/xebastian153/stickervox/releases/latest) ·
+[Guía de instalación](docs/GUIA-INSTALACION.md) ·
+[Reportar un problema](https://github.com/xebastian153/stickervox/issues) ·
+[English](#english)
 
-## Qué hace
+<img src="store/screenshot-2-editar.png" alt="Editor de StickerVox con un sticker circular, texto «¡HOLAAA!» y el indicador «≈ 15 cuadros/s · muy fluido»" width="760">
 
-- **Recorta** el tramo exacto del video (hasta 15 segundos) sobre una tira de miniaturas.
-- **Encuadre libre:** arrastra y acerca la imagen para elegir qué parte se ve.
-- **Texto y emoji** puestos directo sobre el sticker, con estilos (meme, burbuja, etiqueta, sombra), colores y el momento en que aparece cada uno.
-- **Forma:** cuadrado, redondeado o círculo, con borde blanco opcional.
-- **Indicador de fluidez:** antes de crear el sticker te dice cuántos cuadros por segundo va a tener, o cuántos segundos caben si el tramo no entra en el límite.
-- **Audio normalizado** (se puede apagar) con fundidos suaves para que no haga clic.
-- **Envío** al chat o grupo que elijas, después de escucharlo.
+</div>
 
-El sticker sale como WebP animado de 512 × 512 y el sonido como audio Ogg/Opus.
+> [!IMPORTANT]
+> **Proyecto no oficial.** StickerVox no tiene relación con WhatsApp ni con Meta, ni cuenta con su respaldo. Usa partes internas de WhatsApp Web que pueden cambiar sin aviso; si deja de enviar, lo más probable es que WhatsApp se haya actualizado y haga falta una versión nueva.
+
+## Tabla de contenido
+
+- [Características](#características)
+- [Cómo funciona](#cómo-funciona)
+- [Instalación](#instalación)
+- [Uso](#uso)
+- [Límites](#límites)
+- [Privacidad](#privacidad)
+- [Desarrollo](#desarrollo)
+- [Contribuir](#contribuir)
+- [Licencia](#licencia)
+
+## Características
+
+| | Función | Detalle |
+|---|---|---|
+| ✂️ | **Recorte preciso** | Elige el tramo exacto (hasta 15 s) sobre una tira de miniaturas con zoom. |
+| 🖼️ | **Encuadre libre** | Arrastra y acerca la imagen para decidir qué se ve. |
+| 💬 | **Texto y emoji** | Capas sobre el sticker con estilos (meme, burbuja, etiqueta, sombra), colores y momento de aparición. |
+| ⭕ | **Formas** | Cuadrado, redondeado o círculo, con borde blanco opcional. |
+| 📈 | **Indicador de fluidez** | Antes de crear el sticker muestra los cuadros por segundo esperados, o cuántos segundos caben. |
+| 🔊 | **Audio cuidado** | Normalización opcional y fundidos suaves para evitar clics. |
+| 📤 | **Envío directo** | Escúchalo y envíalo al chat o grupo que elijas. |
+
+## Cómo funciona
+
+<table>
+  <tr>
+    <td align="center" width="33%"><img src="store/screenshot-1-video.png" alt="Paso 1: elegir un video"><br><b>1. Video</b><br>Elige o arrastra un MP4, WebM o MOV.</td>
+    <td align="center" width="33%"><img src="store/screenshot-3-creando.png" alt="Paso 2: el sticker se está creando"><br><b>2. Editar y crear</b><br>Recorta, encuadra y decora; el sticker se arma en segundos.</td>
+    <td align="center" width="33%"><img src="store/screenshot-4-enviar.png" alt="Paso 3: enviar el sticker"><br><b>3. Enviar</b><br>Escúchalo, elige el chat y envíalo.</td>
+  </tr>
+</table>
+
+Todo ocurre en tu navegador: cada cuadro se dibuja en un lienzo de 512 × 512, se empaqueta como **WebP animado** (con cuadros delta para ahorrar peso) y el sonido se codifica en **Ogg/Opus** con WebCodecs. Si el clip no cabe en el límite, StickerVox baja primero la calidad y después los cuadros por segundo, priorizando siempre la fluidez.
 
 ## Instalación
 
-### Desde Microsoft Edge Add-ons (recomendado)
+**Requisitos:** Microsoft Edge, Google Chrome o Brave **116 o más nuevo**, en computadora, con [WhatsApp Web](https://web.whatsapp.com). No funciona en el celular ni en la app de escritorio de WhatsApp.
 
-Instálala con un clic desde la tienda: **[StickerVox en Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/PENDIENTE)** <!-- TODO: reemplazar por el enlace real cuando la tienda la apruebe -->
+### Opción A · Microsoft Edge Add-ons
 
-### Desde el ZIP (Edge, Chrome o Brave)
+Próximamente en la tienda de Edge, con instalación de un clic y actualizaciones automáticas.
+<!-- TODO: agregar el enlace de Microsoft Edge Add-ons cuando la tienda apruebe la extensión -->
 
-1. Descarga `StickerVox-vX.Y.Z.zip` de la página de **[Releases](https://github.com/xebastian153/stickervox/releases)** y descomprímelo en una carpeta que no vayas a borrar (por ejemplo `Documentos\StickerVox`).
-2. Abre `edge://extensions` (en Chrome `chrome://extensions`, en Brave `brave://extensions`).
+### Opción B · ZIP (Edge, Chrome o Brave)
+
+1. Descarga `StickerVox-vX.Y.Z.zip` desde [Releases](https://github.com/xebastian153/stickervox/releases/latest) y descomprímelo en una carpeta permanente (por ejemplo, `Documentos\StickerVox`).
+2. Abre `edge://extensions`, `chrome://extensions` o `brave://extensions`.
 3. Activa el **Modo de desarrollador**.
-4. Pulsa **Cargar desempaquetada** (en Chrome: **Cargar descomprimida**) y elige la carpeta que tiene el archivo `manifest.json`.
-5. Fija el ícono de StickerVox en la barra y recarga la pestaña de WhatsApp Web si ya estaba abierta.
+4. Pulsa **Cargar desempaquetada** y elige la carpeta que contiene `manifest.json`.
+5. Fija el ícono de StickerVox y recarga la pestaña de WhatsApp Web.
 
-Necesitas Edge, Chrome o Brave versión 116 o más nueva en una computadora. No funciona en el celular ni en la app de escritorio de WhatsApp.
+¿Primera vez instalando una extensión? La [guía paso a paso](docs/GUIA-INSTALACION.md) explica cada pantalla y los problemas frecuentes.
 
-## Cómo se usa
+## Uso
 
-1. **Video:** abre [WhatsApp Web](https://web.whatsapp.com), pulsa el ícono de StickerVox y elige un video (MP4, WebM o MOV) o arrástralo al panel.
-2. **Editar:** elige el tramo, encuadra, agrega texto o emoji y la forma. Mira el indicador de fluidez y pulsa **Continuar**.
-3. **Enviar:** escúchalo, elige el chat o grupo y pulsa **Enviar a …**.
+1. Abre WhatsApp Web y pulsa el ícono de **StickerVox**.
+2. Elige un video y ajusta tramo, encuadre, texto y forma.
+3. Revisa el indicador de fluidez y pulsa **Continuar**.
+4. Escucha el resultado, elige el chat y pulsa **Enviar a …**.
 
-Para la primera prueba, envíatelo a ti: en la lista aparece como **"Tú (mensajes a ti)"**.
+> [!TIP]
+> Para la primera prueba, envíatelo a ti mismo: en la lista aparece como **«Tú (mensajes a ti)»**.
 
 ## Límites
 
-- **Hasta 15 segundos** por sticker.
-- **Hasta 1 MB:** el sticker animado tiene que pesar menos de 1000 KB. Con mucho movimiento, StickerVox baja los cuadros por segundo y la calidad para que quepa; si aun así no cabe, te pide acortar el tramo.
-- **Quien lo recibe** necesita una versión de WhatsApp que ya tenga stickers con sonido; si no, verá el sticker animado sin sonido.
-- Videos muy largos funcionan, pero crear el sticker tarda un poco más porque se graba el audio del tramo en tiempo real. Quédate en la pestaña mientras se crea.
-- La interfaz está en español.
+| Límite | Valor | Qué pasa si se supera |
+|---|---|---|
+| Duración | 15 s por sticker | El selector de tramo no deja pasar de ahí. |
+| Peso del sticker | < 1000 KB | Se ajustan calidad y cuadros por segundo; si aun así no cabe, sugiere un tramo más corto. |
+| Resolución | 512 × 512 px | El encuadre se adapta a este tamaño. |
+| Videos largos | Sin límite práctico | Funciona, pero el audio se graba en tiempo real: quédate en la pestaña mientras se crea. |
+| Destinatario | WhatsApp con stickers con sonido | En versiones antiguas se ve el sticker animado, sin sonido. |
+
+La interfaz está en español.
 
 ## Privacidad
 
-Todo se procesa en tu navegador. StickerVox no tiene servidores, no usa analítica, no guarda nada y no hace peticiones de red propias: lo único que sale de tu computadora es el sticker que tú decides enviar, y lo envía WhatsApp Web. Detalles en [PRIVACY.md](PRIVACY.md).
+StickerVox **no tiene servidores, no usa analítica, no guarda datos y no hace peticiones de red propias.** Lo único que sale de tu computadora es el sticker que tú decides enviar, y lo envía el propio WhatsApp Web. Solo pide acceso a `https://web.whatsapp.com/*`. Más detalles en la [política de privacidad](PRIVACY.md).
 
 ## Desarrollo
 
-Es JavaScript sin dependencias ni paso de compilación (Manifest V3).
+JavaScript puro, sin dependencias ni paso de compilación.
 
 ```bash
-npm test          # pruebas de los módulos puros con node --test (Node 22 o más nuevo)
+git clone https://github.com/xebastian153/stickervox.git
+cd stickervox
+npm test   # pruebas de los módulos puros con node --test (Node 22+)
 ```
 
-Para probarla en el navegador, carga la carpeta del repositorio como extensión desempaquetada (pasos de arriba) y abre WhatsApp Web. La arquitectura está en [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+Para probarla, carga la carpeta del repositorio como extensión desempaquetada y abre WhatsApp Web.
 
-Los reportes de errores y las ideas van en [Issues](https://github.com/xebastian153/stickervox/issues).
+```text
+stickervox/
+├── manifest.json        # Manifest V3
+├── background.js        # service worker: botón de la barra
+└── src/
+    ├── relay.js         # puente entre la extensión y la página
+    ├── core.js          # espacio de nombres compartido
+    ├── media/           # WebP animado, Ogg/Opus, audio, render y armado del sticker
+    ├── wa/bridge.js     # integración con WhatsApp Web (chats y envío)
+    ├── ui/              # panel: modelo, estilos y vistas (Shadow DOM)
+    └── main.js          # arranque
+```
+
+Los contratos entre módulos están documentados en [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+
+## Contribuir
+
+Los reportes de errores y las ideas son bienvenidos en [Issues](https://github.com/xebastian153/stickervox/issues). Al reportar un error, incluye el navegador y su versión, qué video usaste (duración y formato) y el mensaje que apareció. Para cambios de código, abre un pull request con pruebas que cubran el comportamiento nuevo y verifica que `npm test` pase.
 
 ## Licencia
 
-[MIT](LICENSE) © 2026 Sebas (xebastian153)
+Distribuido bajo la [licencia MIT](LICENSE). © 2026 Sebas ([@xebastian153](https://github.com/xebastian153)).
+
+WhatsApp es una marca registrada de WhatsApp LLC. Este proyecto no está afiliado a WhatsApp LLC ni a Meta Platforms, Inc.
 
 ---
 
 ## English
 
-**StickerVox** is an unofficial Microsoft Edge (and Chromium) extension that turns a short video clip into a WhatsApp sound sticker (animated WebP + Ogg Opus audio) right inside WhatsApp Web: trim up to 15 s, frame freely, add text and emoji layers, pick a square, rounded or circle shape, check the smoothness estimate, listen, and send it to the chat you choose. The interface is in Spanish.
+**StickerVox** is an unofficial extension for Microsoft Edge and other Chromium browsers that turns a short video clip into a WhatsApp **sound sticker** (animated WebP + Ogg/Opus audio), right inside WhatsApp Web.
 
-- **Install:** from [Microsoft Edge Add-ons](https://microsoftedge.microsoft.com/addons/detail/PENDIENTE) <!-- TODO: real link after approval --> or load the ZIP from [Releases](https://github.com/xebastian153/stickervox/releases) as an unpacked extension (`edge://extensions` → Developer mode → Load unpacked).
-- **Limits:** 15 s per sticker, under 1 MB; recipients need a WhatsApp version with sound stickers.
-- **Privacy:** everything runs locally in your browser. No servers, no analytics, no storage, no network requests of its own; only the sticker you choose to send leaves your computer, through WhatsApp Web itself. See [PRIVACY.md](PRIVACY.md).
-- **Not affiliated** with WhatsApp or Meta. It relies on WhatsApp Web internals that may change at any time.
-- **Development:** `npm test`, then load the repository folder as an unpacked extension.
-- **License:** [MIT](LICENSE).
+- **Features:** trim up to 15 s, free framing, text and emoji layers, square, rounded or circle shapes, a smoothness estimate, optional audio normalization, and preview before sending.
+- **Install:** download the ZIP from [Releases](https://github.com/xebastian153/stickervox/releases/latest), then open `edge://extensions`, enable Developer mode and choose **Load unpacked**. Microsoft Edge Add-ons listing coming soon.
+- **Limits:** 15 s per sticker and under 1 MB. Recipients need a WhatsApp version that supports sound stickers.
+- **Privacy:** everything runs locally. There are no servers, no analytics, no storage and no network requests of its own. See [PRIVACY.md](PRIVACY.md).
+- **Development:** plain JavaScript with no build step. Run `npm test` (Node 22+). See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+- **Language:** the interface is in Spanish.
+- **License:** [MIT](LICENSE). Not affiliated with WhatsApp LLC or Meta Platforms, Inc.
