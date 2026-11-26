@@ -1,7 +1,7 @@
 {
   "manifest_version": 3,
   "name": "StickerVox",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Turn a video clip into a WhatsApp sound sticker with free framing, synced captions and normalized audio. Unofficial.",
   "minimum_chrome_version": "116",
   "icons": {

@@ -10,14 +10,14 @@ StickerVox convierte un video corto en un **sticker con sonido para WhatsApp**: 
 
 - Una computadora con **Google Chrome, Microsoft Edge o Brave** (versión 116 o más nueva). No funciona en el celular.
 - Tu WhatsApp abierto en **https://web.whatsapp.com** (la versión web, no la app de escritorio).
-- El archivo **StickerVox-v0.1.0.zip**.
+- El archivo **StickerVox-v0.1.1.zip**.
 
 ---
 
 ## Instalación (5 minutos, una sola vez)
 
 1. **Descomprime el ZIP.**
-   Haz clic derecho sobre `StickerVox-v0.1.0.zip` → **Extraer todo…** y elige una carpeta donde se vaya a quedar, por ejemplo `Documentos\StickerVox`.
+   Haz clic derecho sobre `StickerVox-v0.1.1.zip` → **Extraer todo…** y elige una carpeta donde se vaya a quedar, por ejemplo `Documentos\StickerVox`.
    ⚠️ **No borres ni muevas esa carpeta después**: el navegador la usa todo el tiempo.
 
 2. **Abre la página de extensiones.** Escribe en la barra de direcciones:
