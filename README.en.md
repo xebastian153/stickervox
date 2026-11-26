@@ -57,7 +57,7 @@
 <table>
   <tr>
     <td align="center" width="50%"><img src="store/screenshot-1-video.png" alt="Step 1: choose a video"><br><b>1. Video</b><br>Pick or drop an MP4, WebM or MOV file.</td>
-    <td align="center" width="50%"><img src="store/screenshot-2-editar.png" alt="Step 2: editor with a circular dog sticker and the caption «¡GUAU GUAU!»"><br><b>2. Edit</b><br>Trim, frame and decorate; the estimate tells you how smooth it will be.</td>
+    <td align="center" width="50%"><img src="store/screenshot-2-editar.png" alt="Step 2: editor with a circular cat sticker and the caption «¿Y MI COMIDA?»"><br><b>2. Edit</b><br>Trim, frame and decorate; the estimate tells you how smooth it will be.</td>
   </tr>
   <tr>
     <td align="center" width="50%"><img src="store/screenshot-4-enviar.png" alt="Step 3: preview the sticker and choose the chat"><br><b>3. Send</b><br>Listen, choose the chat and send.</td>
@@ -67,9 +67,9 @@
 
 ### Real example
 
-<img src="docs/media/sticker-perro.webp" alt="Animated sticker of a barking dog with the caption «¡GUAU GUAU!»" width="180" align="right">
+<img src="docs/media/sticker-gato.webp" alt="Animated sticker of a cat that meows and bumps its face into the camera, with the caption «¿Y MI COMIDA?» (Where is my food?)" width="180" align="right">
 
-This is the sticker from the screenshots, exactly as WhatsApp receives it: a 512 × 512 animated WebP, 5.2 s long, about 970 KB, at 15 frames per second. It was made with StickerVox from a [free Pexels video](https://www.pexels.com/video/13372728/).
+This is the sticker from the screenshots, exactly as WhatsApp receives it: a 512 × 512 animated WebP, 4.6 s long, about 930 KB, at 15 frames per second. It was made with StickerVox from a [free Pexels video](https://www.pexels.com/video/4427731/).
 
 <br clear="right">
 

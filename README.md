@@ -54,7 +54,7 @@
 <table>
   <tr>
     <td align="center" width="50%"><img src="store/screenshot-1-video.png" alt="Paso 1: elegir un video"><br><b>1. Video</b><br>Elige o arrastra un MP4, WebM o MOV.</td>
-    <td align="center" width="50%"><img src="store/screenshot-2-editar.png" alt="Paso 2: editor con un sticker circular de un perro y el texto «¡GUAU GUAU!»"><br><b>2. Editar</b><br>Recorta, encuadra y decora; el indicador te dice qué tan fluido saldrá.</td>
+    <td align="center" width="50%"><img src="store/screenshot-2-editar.png" alt="Paso 2: editor con un sticker circular de un gato y el texto «¿Y MI COMIDA?»"><br><b>2. Editar</b><br>Recorta, encuadra y decora; el indicador te dice qué tan fluido saldrá.</td>
   </tr>
   <tr>
     <td align="center" width="50%"><img src="store/screenshot-4-enviar.png" alt="Paso 3: escuchar el sticker y elegir el chat"><br><b>3. Enviar</b><br>Escúchalo, elige el chat y envíalo.</td>
@@ -64,9 +64,9 @@
 
 ### Ejemplo real
 
-<img src="docs/media/sticker-perro.webp" alt="Sticker animado de un perro ladrando con el texto «¡GUAU GUAU!»" width="180" align="right">
+<img src="docs/media/sticker-gato.webp" alt="Sticker animado de un gato que maúlla y choca la cara contra la cámara, con el texto «¿Y MI COMIDA?»" width="180" align="right">
 
-Este es el sticker de las capturas, tal como lo recibe WhatsApp: WebP animado de 512 × 512, 5,2 s, unos 970 KB y a 15 cuadros por segundo. Se hizo con StickerVox a partir de un [video libre de Pexels](https://www.pexels.com/video/13372728/).
+Este es el sticker de las capturas, tal como lo recibe WhatsApp: WebP animado de 512 × 512, 4,6 s, unos 930 KB y a 15 cuadros por segundo. Se hizo con StickerVox a partir de un [video libre de Pexels](https://www.pexels.com/video/4427731/).
 
 <br clear="right">
 
