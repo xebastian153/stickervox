@@ -10,7 +10,7 @@ Archivos que vas a usar (todos en esta carpeta `store/`):
 | `permissions-justification.md` | Página **Privacy** (propósito único, permisos, código remoto) |
 | `logo-300.png` (300 × 300) | Extension logo |
 | `promo-440x280.png` (440 × 280) | Small promotional tile |
-| `screenshot-1-video.png` … `screenshot-4-enviar.png` (1280 × 800) | Screenshots |
+| `screenshot-1-video.png` … `screenshot-5-chat.png` (1280 × 800) | Screenshots |
 
 ---
 
@@ -87,7 +87,7 @@ En la fila de cada idioma, **Edit details**:
 | Extension logo | `logo-300.png` → después pulsa **Duplicate** para copiarlo a los demás idiomas. |
 | Small promotional tile | `promo-440x280.png` (opcional, recomendado) → **Duplicate**. |
 | Large promotional tile | Opcional (1400 × 560). No lo preparamos; se puede dejar vacío. |
-| Screenshots | `screenshot-1-video.png`, `screenshot-2-editar.png`, `screenshot-3-creando.png`, `screenshot-4-enviar.png`, en ese orden (máximo 6; 1280 × 800). → **Duplicate**. Las leyendas están en español; para la ficha en inglés sirven igual o puedes dejarlas sin duplicar. |
+| Screenshots | `screenshot-1-video.png`, `screenshot-2-editar.png`, `screenshot-3-creando.png`, `screenshot-4-enviar.png`, `screenshot-5-chat.png`, en ese orden (máximo 6; 1280 × 800). → **Duplicate**. Las leyendas están en español; para la ficha en inglés sirven igual o puedes dejarlas sin duplicar. |
 | YouTube video URL | Opcional. Un video corto (sin anuncios) ayuda mucho al revisor, ver sección 7. |
 | Search terms | Los 7 términos del archivo del idioma (máximo 7 términos, 30 caracteres cada uno, 21 palabras en total). |
 

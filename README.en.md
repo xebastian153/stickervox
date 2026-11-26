@@ -18,7 +18,7 @@
 
 [Español](README.md) · **English**
 
-<img src="store/screenshot-2-editar.png" alt="StickerVox editor showing a circular sticker, the caption «¡HOLAAA!» and the smoothness estimate «≈ 15 cuadros/s · muy fluido»" width="760">
+<img src="docs/media/demo.gif" alt="StickerVox demo: choosing a video, editing it, building the sticker, sending it and receiving it with sound in the chat" width="760">
 
 </div>
 
@@ -56,11 +56,22 @@
 
 <table>
   <tr>
-    <td align="center" width="33%"><img src="store/screenshot-1-video.png" alt="Step 1: choose a video"><br><b>1. Video</b><br>Pick or drop an MP4, WebM or MOV file.</td>
-    <td align="center" width="33%"><img src="store/screenshot-3-creando.png" alt="Step 2: the sticker is being built"><br><b>2. Edit and build</b><br>Trim, frame and decorate; the sticker is ready in seconds.</td>
-    <td align="center" width="33%"><img src="store/screenshot-4-enviar.png" alt="Step 3: send the sticker"><br><b>3. Send</b><br>Listen, choose the chat and send.</td>
+    <td align="center" width="50%"><img src="store/screenshot-1-video.png" alt="Step 1: choose a video"><br><b>1. Video</b><br>Pick or drop an MP4, WebM or MOV file.</td>
+    <td align="center" width="50%"><img src="store/screenshot-2-editar.png" alt="Step 2: editor with a circular dog sticker and the caption «¡GUAU GUAU!»"><br><b>2. Edit</b><br>Trim, frame and decorate; the estimate tells you how smooth it will be.</td>
+  </tr>
+  <tr>
+    <td align="center" width="50%"><img src="store/screenshot-4-enviar.png" alt="Step 3: preview the sticker and choose the chat"><br><b>3. Send</b><br>Listen, choose the chat and send.</td>
+    <td align="center" width="50%"><img src="store/screenshot-5-chat.png" alt="The sticker received in the chat"><br><b>4. Done</b><br>It arrives in the chat as a sound sticker.</td>
   </tr>
 </table>
+
+### Real example
+
+<img src="docs/media/sticker-perro.webp" alt="Animated sticker of a barking dog with the caption «¡GUAU GUAU!»" width="180" align="right">
+
+This is the sticker from the screenshots, exactly as WhatsApp receives it: a 512 × 512 animated WebP, 5.2 s long, about 970 KB, at 15 frames per second. It was made with StickerVox from a [free Pexels video](https://www.pexels.com/video/13372728/).
+
+<br clear="right">
 
 Everything happens in your browser: each frame is drawn on a 512 × 512 canvas and packed into an **animated WebP** (using delta frames to save space), while the sound is encoded as **Ogg/Opus** with WebCodecs. When a clip does not fit the size limit, StickerVox lowers image quality first and frame rate second, always favoring smooth playback.
 

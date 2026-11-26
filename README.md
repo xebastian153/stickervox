@@ -18,7 +18,7 @@
 
 **Español** · [English](README.en.md)
 
-<img src="store/screenshot-2-editar.png" alt="Editor de StickerVox con un sticker circular, texto «¡HOLAAA!» y el indicador «≈ 15 cuadros/s · muy fluido»" width="760">
+<img src="docs/media/demo.gif" alt="Demostración de StickerVox: elegir un video, editarlo, crear el sticker, enviarlo y recibirlo con sonido en el chat" width="760">
 
 </div>
 
@@ -53,11 +53,22 @@
 
 <table>
   <tr>
-    <td align="center" width="33%"><img src="store/screenshot-1-video.png" alt="Paso 1: elegir un video"><br><b>1. Video</b><br>Elige o arrastra un MP4, WebM o MOV.</td>
-    <td align="center" width="33%"><img src="store/screenshot-3-creando.png" alt="Paso 2: el sticker se está creando"><br><b>2. Editar y crear</b><br>Recorta, encuadra y decora; el sticker se arma en segundos.</td>
-    <td align="center" width="33%"><img src="store/screenshot-4-enviar.png" alt="Paso 3: enviar el sticker"><br><b>3. Enviar</b><br>Escúchalo, elige el chat y envíalo.</td>
+    <td align="center" width="50%"><img src="store/screenshot-1-video.png" alt="Paso 1: elegir un video"><br><b>1. Video</b><br>Elige o arrastra un MP4, WebM o MOV.</td>
+    <td align="center" width="50%"><img src="store/screenshot-2-editar.png" alt="Paso 2: editor con un sticker circular de un perro y el texto «¡GUAU GUAU!»"><br><b>2. Editar</b><br>Recorta, encuadra y decora; el indicador te dice qué tan fluido saldrá.</td>
+  </tr>
+  <tr>
+    <td align="center" width="50%"><img src="store/screenshot-4-enviar.png" alt="Paso 3: escuchar el sticker y elegir el chat"><br><b>3. Enviar</b><br>Escúchalo, elige el chat y envíalo.</td>
+    <td align="center" width="50%"><img src="store/screenshot-5-chat.png" alt="El sticker recibido en el chat"><br><b>4. Listo</b><br>Llega al chat como sticker con sonido.</td>
   </tr>
 </table>
+
+### Ejemplo real
+
+<img src="docs/media/sticker-perro.webp" alt="Sticker animado de un perro ladrando con el texto «¡GUAU GUAU!»" width="180" align="right">
+
+Este es el sticker de las capturas, tal como lo recibe WhatsApp: WebP animado de 512 × 512, 5,2 s, unos 970 KB y a 15 cuadros por segundo. Se hizo con StickerVox a partir de un [video libre de Pexels](https://www.pexels.com/video/13372728/).
+
+<br clear="right">
 
 Todo ocurre en tu navegador: cada cuadro se dibuja en un lienzo de 512 × 512, se empaqueta como **WebP animado** (con cuadros delta para ahorrar peso) y el sonido se codifica en **Ogg/Opus** con WebCodecs. Si el clip no cabe en el límite, StickerVox baja primero la calidad y después los cuadros por segundo, priorizando siempre la fluidez.
 
