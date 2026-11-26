@@ -1,6 +1,6 @@
 <div align="center">
 
-<img src="store/logo-300.png" alt="Logo de StickerVox" width="112" height="112">
+<img src="icons/logo.svg" alt="Logo de StickerVox" width="112" height="112">
 
 # StickerVox
 
