@@ -14,8 +14,9 @@
 
 [Descargar](https://github.com/xebastian153/stickervox/releases/latest) ·
 [Guía de instalación](docs/GUIA-INSTALACION.md) ·
-[Reportar un problema](https://github.com/xebastian153/stickervox/issues) ·
-[English](#english)
+[Reportar un problema](https://github.com/xebastian153/stickervox/issues)
+
+**Español** · [English](README.en.md)
 
 <img src="store/screenshot-2-editar.png" alt="Editor de StickerVox con un sticker circular, texto «¡HOLAAA!» y el indicador «≈ 15 cuadros/s · muy fluido»" width="760">
 
@@ -142,16 +143,3 @@ Distribuido bajo la [licencia MIT](LICENSE). © 2026 Sebas ([@xebastian153](http
 
 WhatsApp es una marca registrada de WhatsApp LLC. Este proyecto no está afiliado a WhatsApp LLC ni a Meta Platforms, Inc.
 
----
-
-## English
-
-**StickerVox** is an unofficial extension for Microsoft Edge and other Chromium browsers that turns a short video clip into a WhatsApp **sound sticker** (animated WebP + Ogg/Opus audio), right inside WhatsApp Web.
-
-- **Features:** trim up to 15 s, free framing, text and emoji layers, square, rounded or circle shapes, a smoothness estimate, optional audio normalization, and preview before sending.
-- **Install:** download the ZIP from [Releases](https://github.com/xebastian153/stickervox/releases/latest), then open `edge://extensions`, enable Developer mode and choose **Load unpacked**. Microsoft Edge Add-ons listing coming soon.
-- **Limits:** 15 s per sticker and under 1 MB. Recipients need a WhatsApp version that supports sound stickers.
-- **Privacy:** everything runs locally. There are no servers, no analytics, no storage and no network requests of its own. See [PRIVACY.md](PRIVACY.md).
-- **Development:** plain JavaScript with no build step. Run `npm test` (Node 22+). See [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
-- **Language:** the interface is in Spanish.
-- **License:** [MIT](LICENSE). Not affiliated with WhatsApp LLC or Meta Platforms, Inc.
