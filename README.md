@@ -76,20 +76,16 @@ Todo ocurre en tu navegador: cada cuadro se dibuja en un lienzo de 512 × 512, s
 
 **Requisitos:** Microsoft Edge, Google Chrome o Brave **116 o más nuevo**, en computadora, con [WhatsApp Web](https://web.whatsapp.com). No funciona en el celular ni en la app de escritorio de WhatsApp.
 
-### Opción A · Microsoft Edge Add-ons
+StickerVox se instala desde un ZIP, gratis y en unos 5 minutos.
 
-Próximamente en la tienda de Edge, con instalación de un clic y actualizaciones automáticas.
-<!-- TODO: agregar el enlace de Microsoft Edge Add-ons cuando la tienda apruebe la extensión -->
+1. Descarga `StickerVox-vX.Y.Z.zip` desde la [página de descargas](https://github.com/xebastian153/stickervox/releases/latest) y descomprímelo en una carpeta fija (por ejemplo, `Documentos\StickerVox`).
+2. Abre `edge://extensions`, `chrome://extensions` o `brave://extensions` y activa el **Modo de desarrollador**.
+3. Pulsa **Cargar desempaquetada** y elige la carpeta que contiene `manifest.json`.
+4. Fija el ícono de StickerVox y recarga la pestaña de WhatsApp Web.
 
-### Opción B · ZIP (Edge, Chrome o Brave)
+<img src="docs/media/instalacion/paso-4-modo-desarrollador.png" alt="Página de extensiones con el interruptor «Modo de desarrollador» y el botón «Cargar desempaquetada» marcados en verde" width="760">
 
-1. Descarga `StickerVox-vX.Y.Z.zip` desde [Releases](https://github.com/xebastian153/stickervox/releases/latest) y descomprímelo en una carpeta permanente (por ejemplo, `Documentos\StickerVox`).
-2. Abre `edge://extensions`, `chrome://extensions` o `brave://extensions`.
-3. Activa el **Modo de desarrollador**.
-4. Pulsa **Cargar desempaquetada** y elige la carpeta que contiene `manifest.json`.
-5. Fija el ícono de StickerVox y recarga la pestaña de WhatsApp Web.
-
-¿Primera vez instalando una extensión? La [guía paso a paso](docs/GUIA-INSTALACION.md) explica cada pantalla y los problemas frecuentes.
+**¿Primera vez instalando una extensión?** Sigue la [guía con imágenes](docs/GUIA-INSTALACION.md): muestra cada pantalla, desde la descarga hasta tu primer sticker, y resuelve los problemas frecuentes.
 
 ## Uso
 

@@ -79,18 +79,16 @@ Everything happens in your browser: each frame is drawn on a 512 × 512 canvas a
 
 **Requirements:** Microsoft Edge, Google Chrome or Brave **116 or newer** on a desktop computer, plus [WhatsApp Web](https://web.whatsapp.com). It does not work on mobile or in the WhatsApp desktop app.
 
-### Option A · Microsoft Edge Add-ons
+StickerVox installs from a ZIP file, for free, in about 5 minutes.
 
-Coming soon to the Edge store, with one-click installation and automatic updates.
-<!-- TODO: add the Microsoft Edge Add-ons link once the listing is approved -->
+1. Download `StickerVox-vX.Y.Z.zip` from the [releases page](https://github.com/xebastian153/stickervox/releases/latest) and extract it to a permanent folder (for example, `Documents\StickerVox`).
+2. Open `edge://extensions`, `chrome://extensions` or `brave://extensions` and turn on **Developer mode**.
+3. Click **Load unpacked** and select the folder that contains `manifest.json`.
+4. Pin the StickerVox icon and reload the WhatsApp Web tab.
 
-### Option B · ZIP (Edge, Chrome or Brave)
+<img src="docs/media/instalacion/paso-4-modo-desarrollador.png" alt="Extensions page with the Developer mode switch and the Load unpacked button highlighted in green" width="760">
 
-1. Download `StickerVox-vX.Y.Z.zip` from [Releases](https://github.com/xebastian153/stickervox/releases/latest) and extract it to a permanent folder (for example, `Documents\StickerVox`).
-2. Open `edge://extensions`, `chrome://extensions` or `brave://extensions`.
-3. Turn on **Developer mode**.
-4. Click **Load unpacked** and select the folder that contains `manifest.json`.
-5. Pin the StickerVox icon and reload the WhatsApp Web tab.
+The [illustrated installation guide](docs/GUIA-INSTALACION.md) (in Spanish) shows every screen, from the download to your first sticker.
 
 ## Usage
 
